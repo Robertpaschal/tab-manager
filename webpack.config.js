@@ -23,7 +23,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'popup.html',
+            template: './public/popup.html',
             filename: 'plugin.html'
         })
     ]
