@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Manager",
+    "description": "Manage and Organize your browser tabs.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "contextMenus"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
