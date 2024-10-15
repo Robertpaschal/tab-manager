@@ -50,6 +50,9 @@ function groupAllTabs() {
     });
 }
 
+let contextMenusCreated = false;
+
+if (!contextMenusCreated) {
 // Create context menu items for closing and grouping tabs
 chrome.contextMenus.create({
     id: "close_all_tabs",
@@ -62,6 +65,9 @@ chrome.contextMenus.create({
     title: "Group All Tabs",
     contexts: ["all"]
 });
+
+contextMenusCreated = true;
+}
 
 // Handle context menu click events
 chrome.contextMenus.onClicked.addListener((info) => {
