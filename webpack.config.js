@@ -30,6 +30,7 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'manifest.json', to: '.'},
+                { from: 'background.js', to: '.'}
             ],
         }),
     ],
