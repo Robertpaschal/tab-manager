@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import TabList from './components/TabList';
-import tabControls from './components/TabControls';
+import TabControls from './components/TabControls';
 import tabsService from './services/tabsService';
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
     return (
         <div className='App'>
             <h1>Tab Manager Extension</h1>
-            <tabControls />
+            <TabControls />
             <TabList tabs={tabs} />
         </div>
     );

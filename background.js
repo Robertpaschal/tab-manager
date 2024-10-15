@@ -89,6 +89,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         sendResponse({ status: 'Closing tabs from ' + message.domain });
     } else if (message.action === "closeAllTabs") {
         closeAllTabs();
+        sendResponse({ status: "All tabs closed" });
     } else if (message.action === "groupAllTabs") {
         groupAllTabs();
     }
