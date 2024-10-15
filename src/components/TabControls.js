@@ -1,5 +1,5 @@
 import React from 'react';
-import tabsService from '../services/tabService';
+import tabsService from '../services/tabsService';
 
 const tabControls = () => {
     const handleCloseAll = () => {
