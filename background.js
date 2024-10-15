@@ -53,20 +53,20 @@ function groupAllTabs() {
 let contextMenusCreated = false;
 
 if (!contextMenusCreated) {
-// Create context menu items for closing and grouping tabs
-chrome.contextMenus.create({
-    id: "close_all_tabs",
-    title: "Close All Tabs",
-    contexts: ["all"]
-});
+    // Create context menu items for closing and grouping tabs
+    chrome.contextMenus.create({
+        id: "close_all_tabs",
+        title: "Close All Tabs",
+        contexts: ["all"]
+    });
 
-chrome.contextMenus.create({
-    id: "group_all_tabs",
-    title: "Group All Tabs",
-    contexts: ["all"]
-});
+    chrome.contextMenus.create({
+        id: "group_all_tabs",
+        title: "Group All Tabs",
+        contexts: ["all"]
+    });
 
-contextMenusCreated = true;
+    contextMenusCreated = true;
 }
 
 // Handle context menu click events
