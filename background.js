@@ -1,4 +1,4 @@
-import tabsService from '../services/tabsService';
+import tabsService from './src/services/tabsService';
 
 let contextMenusCreated = false;
 
